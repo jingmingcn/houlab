@@ -851,7 +851,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   position: relative;
   padding: 180px 0 40px 0;
   display: flex;
@@ -860,6 +860,7 @@ section,
 }
 
 .hero .hero-bg img {
+  margin-top: 100px;
   position: absolute;
   inset: 0;
   display: block;
@@ -870,8 +871,9 @@ section,
 }
 
 .hero .hero-bg::before {
+  /* filter: brightness(90%); */
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 15%);
+  background: color-mix(in srgb, var(--background-color), transparent 40%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -887,6 +889,8 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  background: color-mix(in srgb, var(--background-color), transparent 40%);
+  padding: 40px 100px;
 }
 
 .hero h1 span {
@@ -895,9 +899,11 @@ section,
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 40%); */
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+  padding: 40px 100px;
 }
 
 @media (min-width: 768px) {
